@@ -39,7 +39,7 @@ automations:
     run:
       - action: add-reviewers@v1
         args:
-          reviewers: [Polariks-IT/backend]
+          reviewers: [dmoerland95/backend]
       - action: add-comment@v1
         args:
           comment: |
@@ -53,7 +53,7 @@ automations:
     run:
       - action: add-reviewers@v1
         args:
-          reviewers: [Polariks-IT/frontend]
+          reviewers: [dmoerland95/frontend]
       - action: add-comment@v1
         args:
           comment: |
