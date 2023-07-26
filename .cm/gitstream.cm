@@ -103,7 +103,7 @@ automations:
       - action: add-label@v1
       # etr is defined in the last section of this example
         args:
-          label: {{ 'Large PR' if (calc.etr >= 20) else ('Mid-size PR' if (calc.etr >= 5) else 'Small PR' }}
+          label: {{ 'Large PR' if (calc.etr >= 20) else ('Mid-size PR' if (calc.etr >= 5) else 'Small PR') }}
           color: {{ 'E94637' if (calc.etr >= 20) else ('FBBD10' if (calc.etr >= 5) else '36A853') }}
       - action: add-label@v1
         # etr is defined in the last section of this example
