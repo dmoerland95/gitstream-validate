@@ -103,8 +103,13 @@ automations:
       - action: add-label@v1
       # etr is defined in the last section of this example
         args:
-          label: "{{ calc.etr }} min review"
+          label: {{ 'Large PR' if (calc.etr >= 20) else ('Mid-size PR' if (calc.etr >= 5) else 'Small PR' }}
           color: {{ 'E94637' if (calc.etr >= 20) else ('FBBD10' if (calc.etr >= 5) else '36A853') }}
+      - action: add-label@v1
+        # etr is defined in the last section of this example
+        args:
+          label: "{{ calc.etr }} min review"
+          color: B2BEB5
   # Post a comment that lists the best experts for the files that were modified.
   explain_code_experts:
     if:
