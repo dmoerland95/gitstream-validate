@@ -13,8 +13,4 @@ export class AppController {
   getGoodbye(): string {
     return this.appService.getGoodbye();
   }
-  @Get()
-  getMore(): string {
-    return this.appService.getMore();
-  }
 }

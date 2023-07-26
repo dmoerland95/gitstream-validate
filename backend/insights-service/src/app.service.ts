@@ -8,7 +8,4 @@ export class AppService {
   getGoodbye(): string {
     return 'Goodbye World!';
   }
-  getMore(): string {
-    return 'More World!';
-  }
 }
